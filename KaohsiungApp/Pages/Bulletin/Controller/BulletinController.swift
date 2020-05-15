@@ -46,8 +46,8 @@ class BulletinController: BaseViewController {
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 //    navigationController?.navigationBar.tintColor = .white
     view.addSubview(listView)
-    listView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-    listView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    listView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+    listView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
     listView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     listView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     adapter.collectionView = listView
