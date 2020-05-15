@@ -1,0 +1,6 @@
+framework module Pods_KaohsiungApp {
+  umbrella header "Pods-KaohsiungApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
