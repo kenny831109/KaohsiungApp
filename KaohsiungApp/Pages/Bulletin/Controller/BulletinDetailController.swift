@@ -27,6 +27,10 @@ class BulletinDetailController: UIViewController {
     setupView()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    navigationController?.navigationBar.barTintColor = entry.color
+  }
+  
   func setupView() {
     view.backgroundColor = .white
     navigationController?.navigationBar.tintColor = .white
