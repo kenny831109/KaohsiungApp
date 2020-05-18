@@ -7,6 +7,16 @@
 //
 
 import UIKit
+import MessageUI
+
+enum TransitionType {
+  case push
+  case present
+}
+
+protocol SettingRouterDelegate: class {
+  func transition(to vc: UIViewController, transitionType: TransitionType)
+}
 
 class SettingController: BaseViewController {
   
@@ -17,8 +27,10 @@ class SettingController: BaseViewController {
     return view
   }()
   
-  let generalCard: SettingCard = {
+  lazy var generalCard: SettingCard = {
     let card = SettingCard()
+    card.delegate = self
+    card.mailVC.mailComposeDelegate = self
     return card
   }()
   
@@ -39,6 +51,7 @@ class SettingController: BaseViewController {
   }
   
   override func setupView() {
+    navigationController?.navigationBar.tintColor = .white
     view.addSubview(settingScrollView)
     settingScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
     settingScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
@@ -56,4 +69,21 @@ class SettingController: BaseViewController {
     versionCard.heightAnchor.constraint(equalToConstant: 50).isActive = true
   }
   
+}
+
+extension SettingController: SettingRouterDelegate {
+  func transition(to vc: UIViewController, transitionType: TransitionType) {
+    switch transitionType {
+    case .present:
+      present(vc, animated: true, completion: nil)
+    case .push:
+      navigationController?.pushViewController(vc, animated: true)
+    }
+  }
+}
+
+extension SettingController: MFMailComposeViewControllerDelegate {
+  func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    controller.dismiss(animated: true, completion: nil)
+  }
 }

@@ -40,6 +40,10 @@ class BaseViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = .white
+    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    let backItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    navigationItem.backBarButtonItem = backItem
     setupView()
   }
   

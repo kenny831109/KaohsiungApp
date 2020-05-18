@@ -19,12 +19,17 @@ class TabBarController: UITabBarController {
     bulletinVC.tabBarItem.image = #imageLiteral(resourceName: "newspaper-n").withRenderingMode(.alwaysOriginal)
     bulletinVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "newspaper-h").withRenderingMode(.alwaysOriginal)
     
+    let krtcVC = KRTCListController()
+    krtcVC.tabBarItem.title = "捷運資訊"
+    krtcVC.tabBarItem.image = #imageLiteral(resourceName: "newspaper-n").withRenderingMode(.alwaysOriginal)
+    krtcVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "newspaper-h").withRenderingMode(.alwaysOriginal)
+    
     let settingVC = SettingController()
     settingVC.tabBarItem.title = "設定"
     settingVC.tabBarItem.image = #imageLiteral(resourceName: "setting-n").withRenderingMode(.alwaysOriginal)
     settingVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "setting-h").withRenderingMode(.alwaysOriginal)
     
-    let navigationControllers = [bulletinVC, settingVC].map({ CustomNavigationController(rootViewController: $0) })
+    let navigationControllers = [bulletinVC, krtcVC, settingVC].map({ CustomNavigationController(rootViewController: $0) })
     viewControllers = navigationControllers
   }
 }

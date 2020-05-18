@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class SettingCard: Card {
   
@@ -28,6 +29,8 @@ class SettingCard: Card {
   }()
   
   var rowHeight: CGFloat = 50
+  weak var delegate: SettingRouterDelegate?
+  let mailVC = MFMailComposeViewController()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -37,6 +40,8 @@ class SettingCard: Card {
     feedback.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     feedback.topAnchor.constraint(equalTo: topAnchor).isActive = true
     feedback.heightAnchor.constraint(equalToConstant: rowHeight).isActive = true
+    let feebackGesture = UITapGestureRecognizer(target: self, action: #selector(feedbackGestureHandler))
+    feedback.addGestureRecognizer(feebackGesture)
     let separator1 = separator
     addSubview(separator1)
     separator1.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
@@ -48,6 +53,23 @@ class SettingCard: Card {
     copyright.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     copyright.topAnchor.constraint(equalTo: feedback.bottomAnchor).isActive = true
     copyright.heightAnchor.constraint(equalToConstant: rowHeight).isActive = true
+    let copyrightGesture = UITapGestureRecognizer(target: self, action: #selector(copyrightGestureHandler))
+    copyright.addGestureRecognizer(copyrightGesture)
+  }
+  
+  @objc func feedbackGestureHandler() {
+    if MFMailComposeViewController.canSendMail() {
+      mailVC.setToRecipients(["baby831109@gmail.com"])
+      mailVC.setMessageBody("<p>意見回饋</p>", isHTML: true)
+      delegate?.transition(to: mailVC, transitionType: .present)
+    } else {
+      // show failure alert
+    }
+  }
+  
+  @objc func copyrightGestureHandler() {
+    let vc = CopyrightListController()
+    delegate?.transition(to: vc, transitionType: .push)
   }
   
   required init?(coder: NSCoder) {

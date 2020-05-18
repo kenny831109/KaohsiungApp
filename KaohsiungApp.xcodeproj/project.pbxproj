@@ -15,6 +15,18 @@
 		9414CA56246BB7C0000B8AFD /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA55246BB7C0000B8AFD /* LaunchScreenController.swift */; };
 		9414CA58246BE846000B8AFD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA57246BE846000B8AFD /* APIService.swift */; };
 		9414CA5A246BEDEE000B8AFD /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */; };
+		94499D2724722368003E6FD8 /* CopyrightListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D2624722368003E6FD8 /* CopyrightListController.swift */; };
+		94499D2924722668003E6FD8 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D2824722668003E6FD8 /* Copyright.swift */; };
+		94499D2E24722CA0003E6FD8 /* lottie_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D2D24722CA0003E6FD8 /* lottie_license.txt */; };
+		94499D3024722D46003E6FD8 /* RxSwift_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D2F24722D46003E6FD8 /* RxSwift_license.txt */; };
+		94499D3224722D84003E6FD8 /* Alamofire_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3124722D84003E6FD8 /* Alamofire_license.txt */; };
+		94499D3424722DB7003E6FD8 /* IGListKit_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3324722DB7003E6FD8 /* IGListKit_license.txt */; };
+		94499D3624722E06003E6FD8 /* Moya_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3524722E06003E6FD8 /* Moya_license.txt */; };
+		94499D3824722E2C003E6FD8 /* Kingfisher_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3724722E2C003E6FD8 /* Kingfisher_license.txt */; };
+		94499D3C24722F8F003E6FD8 /* CopyrightLicenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D3B24722F8F003E6FD8 /* CopyrightLicenseController.swift */; };
+		94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D4224724976003E6FD8 /* KRTCListController.swift */; };
+		94499D45247249E4003E6FD8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D44247249E4003E6FD8 /* Station.swift */; };
+		94499D4724725AA7003E6FD8 /* CryptoSwift_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */; };
 		945779C724640A8A001922EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779C624640A8A001922EC /* AppDelegate.swift */; };
 		945779C924640A8A001922EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779C824640A8A001922EC /* SceneDelegate.swift */; };
 		945779CB24640A8A001922EC /* BulletinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779CA24640A8A001922EC /* BulletinController.swift */; };
@@ -49,6 +61,18 @@
 		9414CA55246BB7C0000B8AFD /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		9414CA57246BE846000B8AFD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		94499D2624722368003E6FD8 /* CopyrightListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightListController.swift; sourceTree = "<group>"; };
+		94499D2824722668003E6FD8 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
+		94499D2D24722CA0003E6FD8 /* lottie_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lottie_license.txt; sourceTree = "<group>"; };
+		94499D2F24722D46003E6FD8 /* RxSwift_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RxSwift_license.txt; sourceTree = "<group>"; };
+		94499D3124722D84003E6FD8 /* Alamofire_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Alamofire_license.txt; sourceTree = "<group>"; };
+		94499D3324722DB7003E6FD8 /* IGListKit_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IGListKit_license.txt; sourceTree = "<group>"; };
+		94499D3524722E06003E6FD8 /* Moya_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Moya_license.txt; sourceTree = "<group>"; };
+		94499D3724722E2C003E6FD8 /* Kingfisher_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kingfisher_license.txt; sourceTree = "<group>"; };
+		94499D3B24722F8F003E6FD8 /* CopyrightLicenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightLicenseController.swift; sourceTree = "<group>"; };
+		94499D4224724976003E6FD8 /* KRTCListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRTCListController.swift; sourceTree = "<group>"; };
+		94499D44247249E4003E6FD8 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CryptoSwift_license.txt; sourceTree = "<group>"; };
 		945779C324640A8A001922EC /* KaohsiungApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaohsiungApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945779C624640A8A001922EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945779C824640A8A001922EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +202,7 @@
 		9404FD94246BB2D7008A78AA /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				94499D2C24722C6C003E6FD8 /* License */,
 				94B41392246E64C8000B3709 /* Model */,
 				94B41391246E64C1000B3709 /* View */,
 				94B41390246E64BB000B3709 /* Controller */,
@@ -202,6 +227,53 @@
 				9414CA55246BB7C0000B8AFD /* LaunchScreenController.swift */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		94499D2C24722C6C003E6FD8 /* License */ = {
+			isa = PBXGroup;
+			children = (
+				94499D3124722D84003E6FD8 /* Alamofire_license.txt */,
+				94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */,
+				94499D3724722E2C003E6FD8 /* Kingfisher_license.txt */,
+				94499D2D24722CA0003E6FD8 /* lottie_license.txt */,
+				94499D3324722DB7003E6FD8 /* IGListKit_license.txt */,
+				94499D3524722E06003E6FD8 /* Moya_license.txt */,
+				94499D2F24722D46003E6FD8 /* RxSwift_license.txt */,
+			);
+			path = License;
+			sourceTree = "<group>";
+		};
+		94499D3D24724927003E6FD8 /* KRTC */ = {
+			isa = PBXGroup;
+			children = (
+				94499D4124724950003E6FD8 /* View */,
+				94499D402472494B003E6FD8 /* Model */,
+				94499D3E2472493D003E6FD8 /* Controller */,
+			);
+			path = KRTC;
+			sourceTree = "<group>";
+		};
+		94499D3E2472493D003E6FD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94499D4224724976003E6FD8 /* KRTCListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94499D402472494B003E6FD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94499D44247249E4003E6FD8 /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94499D4124724950003E6FD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		945779BA24640A8A001922EC = {
@@ -278,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				9404FD8B246BB1D6008A78AA /* Bulletin */,
+				94499D3D24724927003E6FD8 /* KRTC */,
 				9404FD94246BB2D7008A78AA /* Setting */,
 			);
 			path = Pages;
@@ -287,6 +360,8 @@
 			isa = PBXGroup;
 			children = (
 				94B41388246E52E8000B3709 /* SettingController.swift */,
+				94499D2624722368003E6FD8 /* CopyrightListController.swift */,
+				94499D3B24722F8F003E6FD8 /* CopyrightLicenseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				94B41394246E730B000B3709 /* Setting.swift */,
+				94499D2824722668003E6FD8 /* Copyright.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,10 +464,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94499D3024722D46003E6FD8 /* RxSwift_license.txt in Resources */,
+				94499D3424722DB7003E6FD8 /* IGListKit_license.txt in Resources */,
+				94499D3824722E2C003E6FD8 /* Kingfisher_license.txt in Resources */,
+				94499D4724725AA7003E6FD8 /* CryptoSwift_license.txt in Resources */,
 				945779D324640A8E001922EC /* LaunchScreen.storyboard in Resources */,
 				94B41387246E48FB000B3709 /* Searching.json in Resources */,
 				945779D024640A8E001922EC /* Assets.xcassets in Resources */,
+				94499D2E24722CA0003E6FD8 /* lottie_license.txt in Resources */,
+				94499D3624722E06003E6FD8 /* Moya_license.txt in Resources */,
 				94B41380246E4262000B3709 /* Loading.json in Resources */,
+				94499D3224722D84003E6FD8 /* Alamofire_license.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,9 +532,12 @@
 				9414CA53246BB4DE000B8AFD /* Color.swift in Sources */,
 				9414CA5A246BEDEE000B8AFD /* UITableView+extension.swift in Sources */,
 				94B413A3246E87B9000B3709 /* VersionCard.swift in Sources */,
+				94499D2724722368003E6FD8 /* CopyrightListController.swift in Sources */,
+				94499D3C24722F8F003E6FD8 /* CopyrightLicenseController.swift in Sources */,
 				94FF9908246A81310006393F /* BulletinCell.swift in Sources */,
 				94B41385246E484A000B3709 /* EmptyDataView.swift in Sources */,
 				94B41383246E43B3000B3709 /* BaseViewController.swift in Sources */,
+				94499D45247249E4003E6FD8 /* Station.swift in Sources */,
 				94F4E7F1246D46E300F834BA /* String+extension.swift in Sources */,
 				94B41389246E52E8000B3709 /* SettingController.swift in Sources */,
 				94B4137E246E2EA0000B3709 /* LinkCell.swift in Sources */,
@@ -466,6 +552,8 @@
 				9414CA56246BB7C0000B8AFD /* LaunchScreenController.swift in Sources */,
 				945779C724640A8A001922EC /* AppDelegate.swift in Sources */,
 				94B413A0246E7A8E000B3709 /* SettingContainer.swift in Sources */,
+				94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */,
+				94499D2924722668003E6FD8 /* Copyright.swift in Sources */,
 				94B4138E246E6380000B3709 /* Card.swift in Sources */,
 				9414CA51246BB49B000B8AFD /* UIColor+extension.swift in Sources */,
 				945779C924640A8A001922EC /* SceneDelegate.swift in Sources */,
@@ -611,7 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -623,7 +711,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -633,7 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -645,7 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

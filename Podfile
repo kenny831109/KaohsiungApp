@@ -11,6 +11,7 @@ target 'KaohsiungApp' do
   pod 'Kingfisher', '~> 5.0'
   pod 'IGListKit'
   pod 'lottie-ios'
+  pod 'CryptoSwift'
   # Pods for KaohsiungApp
 
 end
