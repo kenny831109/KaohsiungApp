@@ -14,7 +14,7 @@
 
 ## Screen shot
 
-![](https://i.imgur.com/325drmll.png)![](https://i.imgur.com/wl7Dn7hl.png)![](https://i.imgur.com/XrjHRLtl.png)![](https://i.imgur.com/4FG3CG9l.png)![](https://i.imgur.com/nIsRxTul.png)
+![](https://i.imgur.com/wl7Dn7hl.png)![](https://i.imgur.com/XrjHRLtl.png)![](https://i.imgur.com/4FG3CG9l.png)
 
 
 ## 預計新增的功能
