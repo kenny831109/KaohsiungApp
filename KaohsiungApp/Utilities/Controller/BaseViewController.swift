@@ -62,8 +62,8 @@ class BaseViewController: UIViewController {
   
   private func loading() {
     view.addSubview(loadingView)
-    loadingView.heightAnchor.constraint(equalToConstant: 150).isActive = true
-    loadingView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+    loadingView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+    loadingView.widthAnchor.constraint(equalToConstant: 200).isActive = true
     loadingView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     loadingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     loadingView.play()

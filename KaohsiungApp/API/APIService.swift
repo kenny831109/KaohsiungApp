@@ -23,7 +23,7 @@ struct ApiManager {
       }
     }.disposed(by: disposeBag)
   }
-//  func getData<T: Codable>(service: ApiSevice, completion: @escaping (T?) -> ()) {
+//  func testData<T: Codable>(service: ApiSevice, completion: @escaping (T?) -> ()) {
 //    let provider = MoyaProvider<ApiSevice>()
 //    provider.rx.request(service)
 //      .subscribe(onSuccess: { (res) in

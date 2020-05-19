@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6924DD161BA384FCF84AF624 /* Pods_KaohsiungApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7DD43078278C687112A0ED /* Pods_KaohsiungApp.framework */; };
+		94023318247381CC00DEAAC8 /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 94023317247381CC00DEAAC8 /* Loading.json */; };
+		9402331A2473824F00DEAAC8 /* StationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940233192473824F00DEAAC8 /* StationCard.swift */; };
+		9402331C247387E000DEAAC8 /* LiveBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402331B247387E000DEAAC8 /* LiveBoard.swift */; };
+		9402331E2473A8A600DEAAC8 /* LiveBoardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */; };
 		9404FD88246BA566008A78AA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9404FD87246BA566008A78AA /* TabBarController.swift */; };
 		9404FD8A246BA5E9008A78AA /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9404FD89246BA5E9008A78AA /* CustomNavigationController.swift */; };
 		9414CA51246BB49B000B8AFD /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA50246BB49B000B8AFD /* UIColor+extension.swift */; };
@@ -27,13 +31,17 @@
 		94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D4224724976003E6FD8 /* KRTCListController.swift */; };
 		94499D45247249E4003E6FD8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D44247249E4003E6FD8 /* Station.swift */; };
 		94499D4724725AA7003E6FD8 /* CryptoSwift_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */; };
+		944D7AAA2472771D00F187D0 /* StationSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AA92472771D00F187D0 /* StationSectionController.swift */; };
+		944D7AAD247277B800F187D0 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AAC247277B800F187D0 /* StationCell.swift */; };
+		944D7AAF2472873100F187D0 /* KeyBoardLayoutGuilde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */; };
+		944D7AB1247290D200F187D0 /* StationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AB0247290D200F187D0 /* StationBadge.swift */; };
+		944D7AB32472941500F187D0 /* StationLiveBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AB22472941500F187D0 /* StationLiveBoardController.swift */; };
 		945779C724640A8A001922EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779C624640A8A001922EC /* AppDelegate.swift */; };
 		945779C924640A8A001922EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779C824640A8A001922EC /* SceneDelegate.swift */; };
 		945779CB24640A8A001922EC /* BulletinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945779CA24640A8A001922EC /* BulletinController.swift */; };
 		945779D024640A8E001922EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945779CF24640A8E001922EC /* Assets.xcassets */; };
 		945779D324640A8E001922EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945779D124640A8E001922EC /* LaunchScreen.storyboard */; };
 		94B4137E246E2EA0000B3709 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4137D246E2EA0000B3709 /* LinkCell.swift */; };
-		94B41380246E4262000B3709 /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 94B4137F246E4262000B3709 /* Loading.json */; };
 		94B41383246E43B3000B3709 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B41382246E43B3000B3709 /* BaseViewController.swift */; };
 		94B41385246E484A000B3709 /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B41384246E484A000B3709 /* EmptyDataView.swift */; };
 		94B41387246E48FB000B3709 /* Searching.json in Resources */ = {isa = PBXBuildFile; fileRef = 94B41386246E48FB000B3709 /* Searching.json */; };
@@ -54,6 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94023317247381CC00DEAAC8 /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
+		940233192473824F00DEAAC8 /* StationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCard.swift; sourceTree = "<group>"; };
+		9402331B247387E000DEAAC8 /* LiveBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBoard.swift; sourceTree = "<group>"; };
+		9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBoardCard.swift; sourceTree = "<group>"; };
 		9404FD87246BA566008A78AA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9404FD89246BA5E9008A78AA /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		9414CA50246BB49B000B8AFD /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
@@ -73,6 +85,11 @@
 		94499D4224724976003E6FD8 /* KRTCListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRTCListController.swift; sourceTree = "<group>"; };
 		94499D44247249E4003E6FD8 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CryptoSwift_license.txt; sourceTree = "<group>"; };
+		944D7AA92472771D00F187D0 /* StationSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSectionController.swift; sourceTree = "<group>"; };
+		944D7AAC247277B800F187D0 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardLayoutGuilde.swift; sourceTree = "<group>"; };
+		944D7AB0247290D200F187D0 /* StationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBadge.swift; sourceTree = "<group>"; };
+		944D7AB22472941500F187D0 /* StationLiveBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLiveBoardController.swift; sourceTree = "<group>"; };
 		945779C324640A8A001922EC /* KaohsiungApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaohsiungApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945779C624640A8A001922EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945779C824640A8A001922EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +98,6 @@
 		945779D224640A8E001922EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945779D424640A8E001922EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94B4137D246E2EA0000B3709 /* LinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
-		94B4137F246E4262000B3709 /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
 		94B41382246E43B3000B3709 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		94B41384246E484A000B3709 /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
 		94B41386246E48FB000B3709 /* Searching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Searching.json; sourceTree = "<group>"; };
@@ -216,6 +232,7 @@
 				9414CA50246BB49B000B8AFD /* UIColor+extension.swift */,
 				9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */,
 				94F4E7F0246D46E300F834BA /* String+extension.swift */,
+				944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				94499D4224724976003E6FD8 /* KRTCListController.swift */,
+				944D7AA92472771D00F187D0 /* StationSectionController.swift */,
+				944D7AB22472941500F187D0 /* StationLiveBoardController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				94499D44247249E4003E6FD8 /* Station.swift */,
+				9402331B247387E000DEAAC8 /* LiveBoard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,8 +292,20 @@
 		94499D4124724950003E6FD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				944D7AB0247290D200F187D0 /* StationBadge.swift */,
+				940233192473824F00DEAAC8 /* StationCard.swift */,
+				9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */,
+				944D7AAB247277A600F187D0 /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		944D7AAB247277A600F187D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				944D7AAC247277B800F187D0 /* StationCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		945779BA24640A8A001922EC = {
@@ -314,7 +346,7 @@
 		94B41381246E4270000B3709 /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
-				94B4137F246E4262000B3709 /* Loading.json */,
+				94023317247381CC00DEAAC8 /* Loading.json */,
 				94B41386246E48FB000B3709 /* Searching.json */,
 			);
 			path = LottieFiles;
@@ -471,9 +503,9 @@
 				945779D324640A8E001922EC /* LaunchScreen.storyboard in Resources */,
 				94B41387246E48FB000B3709 /* Searching.json in Resources */,
 				945779D024640A8E001922EC /* Assets.xcassets in Resources */,
+				94023318247381CC00DEAAC8 /* Loading.json in Resources */,
 				94499D2E24722CA0003E6FD8 /* lottie_license.txt in Resources */,
 				94499D3624722E06003E6FD8 /* Moya_license.txt in Resources */,
-				94B41380246E4262000B3709 /* Loading.json in Resources */,
 				94499D3224722D84003E6FD8 /* Alamofire_license.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,24 +559,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944D7AAF2472873100F187D0 /* KeyBoardLayoutGuilde.swift in Sources */,
 				94FF9906246A49790006393F /* BulletinModel.swift in Sources */,
+				944D7AB1247290D200F187D0 /* StationBadge.swift in Sources */,
 				9404FD88246BA566008A78AA /* TabBarController.swift in Sources */,
+				9402331C247387E000DEAAC8 /* LiveBoard.swift in Sources */,
 				9414CA53246BB4DE000B8AFD /* Color.swift in Sources */,
 				9414CA5A246BEDEE000B8AFD /* UITableView+extension.swift in Sources */,
 				94B413A3246E87B9000B3709 /* VersionCard.swift in Sources */,
+				9402331E2473A8A600DEAAC8 /* LiveBoardCard.swift in Sources */,
 				94499D2724722368003E6FD8 /* CopyrightListController.swift in Sources */,
 				94499D3C24722F8F003E6FD8 /* CopyrightLicenseController.swift in Sources */,
 				94FF9908246A81310006393F /* BulletinCell.swift in Sources */,
+				944D7AB32472941500F187D0 /* StationLiveBoardController.swift in Sources */,
 				94B41385246E484A000B3709 /* EmptyDataView.swift in Sources */,
 				94B41383246E43B3000B3709 /* BaseViewController.swift in Sources */,
 				94499D45247249E4003E6FD8 /* Station.swift in Sources */,
 				94F4E7F1246D46E300F834BA /* String+extension.swift in Sources */,
 				94B41389246E52E8000B3709 /* SettingController.swift in Sources */,
 				94B4137E246E2EA0000B3709 /* LinkCell.swift in Sources */,
+				944D7AAD247277B800F187D0 /* StationCell.swift in Sources */,
 				9414CA58246BE846000B8AFD /* APIService.swift in Sources */,
 				9404FD8A246BA5E9008A78AA /* CustomNavigationController.swift in Sources */,
 				94F4E7F4246D4C7A00F834BA /* HtmlContentCell.swift in Sources */,
 				945779CB24640A8A001922EC /* BulletinController.swift in Sources */,
+				9402331A2473824F00DEAAC8 /* StationCard.swift in Sources */,
 				94B41395246E730B000B3709 /* Setting.swift in Sources */,
 				94B4139C246E770D000B3709 /* SettingCard.swift in Sources */,
 				94F4E7EB246BFC3F00F834BA /* BulletinSectionController.swift in Sources */,
@@ -553,6 +592,7 @@
 				945779C724640A8A001922EC /* AppDelegate.swift in Sources */,
 				94B413A0246E7A8E000B3709 /* SettingContainer.swift in Sources */,
 				94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */,
+				944D7AAA2472771D00F187D0 /* StationSectionController.swift in Sources */,
 				94499D2924722668003E6FD8 /* Copyright.swift in Sources */,
 				94B4138E246E6380000B3709 /* Card.swift in Sources */,
 				9414CA51246BB49B000B8AFD /* UIColor+extension.swift in Sources */,

@@ -13,16 +13,17 @@ import CryptoSwift
 
 enum ApiSevice {
   case BulletinBoard(_ offset: Int)
-  case GetMRTList
+  case GetMRTList(_ filter: String)
+  case GetLiveBoard(_ stationID: String)
 }
 
 extension ApiSevice: TargetType {
   var baseURL: URL {
     switch self {
     case .BulletinBoard(_):
-      return URL(string: "https://www.ktec.gov.t")!
-    case .GetMRTList:
-      return URL(string: "https://ptx.transportdata.tw/MOTC/v2/Rail/Metr")!
+      return URL(string: "https://www.ktec.gov.tw")!
+    case .GetMRTList(_), .GetLiveBoard(_):
+      return URL(string: "https://ptx.transportdata.tw/MOTC/v2/Rail/Metro")!
     }
   }
   
@@ -32,6 +33,8 @@ extension ApiSevice: TargetType {
       return "/ktec_api.php"
     case .GetMRTList:
       return "/Station/KRTC"
+    case .GetLiveBoard(_):
+      return "/LiveBoard/KRTC"
     }
   }
   
@@ -48,15 +51,20 @@ extension ApiSevice: TargetType {
     case .BulletinBoard(let offset):
       let parameter = ["type": "json", "limit": 100, "offset": offset] as [String: Any]
       return .requestParameters(parameters: parameter, encoding: URLEncoding.default)
-    case .GetMRTList:
-      let parameter = ["$format": "JSON"] as [String: Any]
+    case .GetMRTList(let keyword):
+      let parameter = ["$format": "JSON",
+                       "$filter": "contains(StationName/Zh_tw, '\(keyword)') or contains(StationName/En, '\(keyword)')"] as [String: Any]
+      return .requestParameters(parameters: parameter, encoding: URLEncoding.default)
+    case .GetLiveBoard(let stationID):
+      let parameter = ["$format": "JSON",
+                       "$filter": "StationID eq '\(stationID)'"] as [String: Any]
       return .requestParameters(parameters: parameter, encoding: URLEncoding.default)
     }
   }
   
   var headers: [String : String]? {
     switch self {
-    case .GetMRTList:
+    case .GetMRTList(_), .GetLiveBoard(_):
       let appid = "80f21ba6534b44f498d7b4488212067e"
       let appKey = "lyPRSXmBKG3t7ZZs-cp_u2HSRNg"
       let dateFormater = DateFormatter()

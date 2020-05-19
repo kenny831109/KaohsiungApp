@@ -21,8 +21,8 @@ class TabBarController: UITabBarController {
     
     let krtcVC = KRTCListController()
     krtcVC.tabBarItem.title = "捷運資訊"
-    krtcVC.tabBarItem.image = #imageLiteral(resourceName: "newspaper-n").withRenderingMode(.alwaysOriginal)
-    krtcVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "newspaper-h").withRenderingMode(.alwaysOriginal)
+    krtcVC.tabBarItem.image = #imageLiteral(resourceName: "mrt-n").withRenderingMode(.alwaysOriginal)
+    krtcVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "mrt-h").withRenderingMode(.alwaysOriginal)
     
     let settingVC = SettingController()
     settingVC.tabBarItem.title = "設定"

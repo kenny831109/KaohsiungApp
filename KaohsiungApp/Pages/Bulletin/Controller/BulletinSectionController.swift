@@ -15,6 +15,22 @@ class BulletinSectionController: ListSectionController {
     return 1
   }
   
+  override func didHighlightItem(at index: Int) {
+    UIView.animate(withDuration: 0.5) {
+      if let cell = self.collectionContext?.cellForItem(at: index, sectionController: self) as? BulletinCell {
+        cell.newsCard.transform = .init(scaleX: 0.95, y: 0.95)
+      }
+    }
+  }
+  
+  override func didUnhighlightItem(at index: Int) {
+    UIView.animate(withDuration: 0.5) {
+      if let cell = self.collectionContext?.cellForItem(at: index, sectionController: self) as? BulletinCell {
+        cell.newsCard.transform = .identity
+      }
+    }
+  }
+  
   override func sizeForItem(at index: Int) -> CGSize {
       return CGSize(width: collectionContext!.containerSize.width, height: 120)
   }

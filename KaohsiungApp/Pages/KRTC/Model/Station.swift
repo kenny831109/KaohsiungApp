@@ -7,23 +7,43 @@
 //
 
 import Foundation
+import IGListDiffKit
 
 
-struct Station: Codable {
+class Station: Codable, ListDiffable {
+  func diffIdentifier() -> NSObjectProtocol {
+    return StationID as NSObjectProtocol
+  }
+  
+  func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
+    guard let object = object as? Station else { return false }
+    return StationID == object.StationID
+  }
+  
   let StationUID: String
   let StationID: String
-//  let StationName: StationNameType
-//  let StationAddress: String
-//  let BikeAllowOnHoliday: Bool
-//  let StationPosition: StationPointType
+  let StationName: StationNameType
+  let StationAddress: String
+  let BikeAllowOnHoliday: Bool
+  let StationPosition: StationPointType
 }
 
-struct StationNameType: Codable {
+extension Station {
+  var color: UIColor {
+    if StationID.first == "R" {
+      return UIColor(r: 223, g: 12, b: 89, a: 1)
+    }else {
+      return UIColor(r: 255, g: 138, b: 0, a: 1)
+    }
+  }
+}
+
+class StationNameType: Codable {
   let Zh_tw: String?
   let En: String?
 }
 
-struct StationPointType: Codable {
+class StationPointType: Codable {
   let PositionLat: Double?
   let PositionLon: Double?
 }
