@@ -43,7 +43,7 @@ class LaunchScreenController: UIViewController {
   let label_3: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.text = "市"
+    label.text = "資"
     label.textColor = .darkGray
     label.font = UIFont.systemFont(ofSize: 40, weight: .medium)
     label.textAlignment = .center
@@ -54,7 +54,7 @@ class LaunchScreenController: UIViewController {
   let label_4: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.text = "政"
+    label.text = "訊"
     label.textColor = .darkGray
     label.font = UIFont.systemFont(ofSize: 40, weight: .medium)
     label.textAlignment = .center
@@ -65,7 +65,7 @@ class LaunchScreenController: UIViewController {
   let label_5: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    label.text = "府"
+    label.text = "通"
     label.textColor = .darkGray
     label.font = UIFont.systemFont(ofSize: 40, weight: .medium)
     label.textAlignment = .center

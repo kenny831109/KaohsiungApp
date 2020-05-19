@@ -90,7 +90,7 @@
 		944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardLayoutGuilde.swift; sourceTree = "<group>"; };
 		944D7AB0247290D200F187D0 /* StationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBadge.swift; sourceTree = "<group>"; };
 		944D7AB22472941500F187D0 /* StationLiveBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLiveBoardController.swift; sourceTree = "<group>"; };
-		945779C324640A8A001922EC /* KaohsiungApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaohsiungApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		945779C324640A8A001922EC /* 高雄資訊通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高雄資訊通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945779C624640A8A001922EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945779C824640A8A001922EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		945779CA24640A8A001922EC /* BulletinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinController.swift; sourceTree = "<group>"; };
@@ -321,7 +321,7 @@
 		945779C424640A8A001922EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				945779C324640A8A001922EC /* KaohsiungApp.app */,
+				945779C324640A8A001922EC /* 高雄資訊通.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -454,7 +454,7 @@
 			);
 			name = KaohsiungApp;
 			productName = KaohsiungApp;
-			productReference = 945779C324640A8A001922EC /* KaohsiungApp.app */;
+			productReference = 945779C324640A8A001922EC /* 高雄資訊通.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -749,7 +749,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高雄資訊通";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -771,7 +771,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "高雄資訊通";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
