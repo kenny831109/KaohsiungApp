@@ -9,6 +9,7 @@
 import UIKit
 import IGListKit
 import Lottie
+import StoreKit
 
 class BulletinController: BaseViewController {
   
@@ -33,6 +34,11 @@ class BulletinController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     loadData()
+    let userDefault = UserDefaults()
+    let count = userDefault.integer(forKey: "launchCount")
+    if count == 5 {
+      SKStoreReviewController.requestReview()
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -60,7 +66,6 @@ class BulletinController: BaseViewController {
     isLoading = true
     apiManager.getData(service: .BulletinBoard(offset)) { (model: BulletinModel?) in
       if let model = model {
-        print(model.entries)
         self.totalPage = model.paging.total
         self.enrties = model.entries
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {

@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabbarVC
       }
     }
+    let userDefaults = UserDefaults()
+    var count = userDefaults.integer(forKey: "launchCount")
+    count += 1
+    userDefaults.set(count, forKey: "launchCount")
     return true
   }
 
