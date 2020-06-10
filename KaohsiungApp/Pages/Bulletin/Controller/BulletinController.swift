@@ -60,11 +60,13 @@ class BulletinController: BaseViewController {
     isLoading = true
     apiManager.getData(service: .BulletinBoard(offset)) { (model: BulletinModel?) in
       if let model = model {
+        print(model.entries)
         self.totalPage = model.paging.total
         self.enrties = model.entries
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
           self.isLoading = false
-          self.adapter.performUpdates(animated: true)
+//          self.adapter.performUpdates(animated: true)
+          self.adapter.reloadData(completion: nil)
           self.fetchingMore = false
         }
       }else {
@@ -124,19 +126,19 @@ extension BulletinController: UIScrollViewDelegate {
 //    let distance = scrollView.contentSize.height - (targetContentOffset.pointee.y + scrollView.bounds.height)
 //    if !fetchingMore && distance < 200 {
 //        batchNewData()
-////      fetchingMore = true
-////      adapter.performUpdates(animated: true, completion: nil)
-////      DispatchQueue.global(qos: .default).async {
-////          // fake background loading task
-////        sleep(2)
-////        DispatchQueue.main.async {
-////          self.fetchingMore = false
-////          self.offset += 1
+//      fetchingMore = true
+//      adapter.performUpdates(animated: true, completion: nil)
+//      DispatchQueue.global(qos: .default).async {
+//          // fake background loading task
+//        sleep(2)
+//        DispatchQueue.main.async {
+//          self.fetchingMore = false
+//          self.offset += 1
 ////          self.enrties.append(Entries(title: "Test", category: "", top: 1, publication_date: "", takendown_date: "", contents: "", id: "\(self.offset)", remark: "", links: [LinkModel](), files: [FileModel]()))
 ////          self.enrties.append(Entries(title: "Test", category: "", top: 1, publication_date: "", takendown_date: "", contents: "", id: "\(self.offset + 1)", remark: "", links: [LinkModel](), files: [FileModel]()))
-////          self.adapter.performUpdates(animated: true, completion: nil)
-////        }
-////      }
+//          self.adapter.performUpdates(animated: true, completion: nil)
+//        }
+//      }
 //    }
 //  }
 }

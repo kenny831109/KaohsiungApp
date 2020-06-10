@@ -13,6 +13,7 @@ class StationCard: Card {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont.systemFont(ofSize: 14, weight: .light)
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   

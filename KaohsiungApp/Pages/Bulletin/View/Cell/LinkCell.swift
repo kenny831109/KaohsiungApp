@@ -31,6 +31,7 @@ class LinkCell: UITableViewCell {
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+    backgroundColor = .white
     addSubview(linkBtn)
     linkBtn.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
     linkBtn.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true

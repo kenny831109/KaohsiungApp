@@ -18,6 +18,8 @@ class HtmlContentCell: UITableViewCell {
     textView.contentInset.left = 15
     textView.contentInset.right = 15
     textView.dataDetectorTypes = .all
+    textView.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
+    textView.backgroundColor = .white
     return textView
   }()
   

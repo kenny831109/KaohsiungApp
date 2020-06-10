@@ -16,6 +16,7 @@ class LiveBoardCard: Card {
     label.textAlignment = .center
     label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
     label.text = "高雄國際機場"
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   
@@ -25,6 +26,7 @@ class LiveBoardCard: Card {
     label.textAlignment = .center
     label.font = UIFont.systemFont(ofSize: 14, weight: .light)
     label.text = "Kaohsiung International Airport"
+    label.textColor = .lightGray
     return label
   }()
   
@@ -41,6 +43,7 @@ class LiveBoardCard: Card {
     label.textAlignment = .center
     label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
     label.text = "小港"
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   
@@ -50,6 +53,7 @@ class LiveBoardCard: Card {
     label.textAlignment = .center
     label.font = UIFont.systemFont(ofSize: 14, weight: .light)
     label.text = "Siaogang"
+    label.textColor = .lightGray
     return label
   }()
   
@@ -60,6 +64,7 @@ class LiveBoardCard: Card {
     label.textAlignment = .center
 //    label.textColor = UIColor.lightGray
     label.text = "預估到站時間: 3 分鐘"
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   
@@ -69,7 +74,15 @@ class LiveBoardCard: Card {
       stationName_en.text = liveBoard?.StationName.En
       destination_zh.text = liveBoard?.DestinationStationName.Zh_tw
       destination_en.text = liveBoard?.DestinationStationName.En
-      estimateTimeTitle.text = "預估到站時間: \(liveBoard?.EstimateTime ?? 0) 分鐘"
+      if let estimateTime = liveBoard?.EstimateTime {
+        if estimateTime == 0 {
+          estimateTimeTitle.text = "列車進站中..."
+        }else {
+          estimateTimeTitle.text = "預估到站時間: \(estimateTime) 分鐘"
+        }
+      }else {
+        estimateTimeTitle.text = ""
+      }
     }
   }
   

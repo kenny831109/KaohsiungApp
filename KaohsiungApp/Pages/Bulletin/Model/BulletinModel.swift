@@ -19,6 +19,7 @@ enum CategoryType: String, Codable {
   case other = "其他"
   case event = "就促活動"
   case news = "就業快報"
+  case customTraining = "自辦職訓"
 }
 
 class BulletinModel: Codable {
@@ -88,6 +89,8 @@ extension Entries {
       return .red
     case .news:
       return .yellow
+    case .customTraining:
+      return .systemPink
     }
   }
   
@@ -96,7 +99,7 @@ extension Entries {
     paragraph.lineSpacing = 5
     paragraph.lineBreakMode = .byTruncatingTail
     let att = NSAttributedString(string: title, attributes: [.paragraphStyle : paragraph,
-                                                             .font: UIFont.systemFont(ofSize: 16, weight: .regular)])
+                                                             .font: UIFont.systemFont(ofSize: 16, weight: .regular) , .foregroundColor: UIColor(r: 74, g: 74, b: 74, a: 1)])
     return att
   }
 }

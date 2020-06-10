@@ -73,8 +73,11 @@ extension ApiSevice: TargetType {
       dateFormater.timeZone = TimeZone(secondsFromGMT: 0)
       let date = dateFormater.string(from: Date())
       let signDate = "x-date: " + date
+      print(signDate)
       let base64 = try! HMAC(key: appKey, variant: .sha1).authenticate(signDate.bytes).toBase64()!
+      print(base64)
       let authorization: String = "hmac username=\""+appid+"\", algorithm=\"hmac-sha1\", headers=\"x-date\", signature=\""+base64+"\""
+      print(authorization)
       return ["Authorization": authorization,
               "x-date": date,
               "Accept-Encoding": "gzip"]

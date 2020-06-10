@@ -1,5 +1,5 @@
 //
-//  KRTCListController.swift
+//  StationListController.swift
 //  KaohsiungApp
 //
 //  Created by 逸唐陳 on 2020/5/18.
@@ -11,7 +11,7 @@ import IGListKit
 import RxSwift
 import RxCocoa
 
-class KRTCListController: BaseViewController {
+class StationListController: BaseViewController {
   lazy var adapter: ListAdapter = {
       return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 3)
   }()
@@ -65,11 +65,18 @@ class KRTCListController: BaseViewController {
     } else {
       // Fallback on earlier versions
     }
+//    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(r: 74, g: 74, b: 74, a: 1)]
     searchController = UISearchController(searchResultsController: nil)
     searchController.dimsBackgroundDuringPresentation = false
-    searchController.searchBar.tintColor = .white
+    searchController.searchBar.tintColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     searchController.searchBar.searchTextField.backgroundColor = .white
     searchController.searchBar.searchTextField.tintColor = .systemBlue
+    searchController.searchBar.setTextColor(color: UIColor(r: 74, g: 74, b: 74, a: 1))
+    if let icon = searchController.searchBar.searchTextField.leftView as? UIImageView {
+      icon.image = icon.image?.withRenderingMode(.alwaysTemplate)
+      icon.tintColor = UIColor(r: 74, g: 74, b: 74, a: 1)
+    }
+//    searchController.searchBar.searchTextField
     searchController.searchBar.rx.text
       .orEmpty
       .throttle(.milliseconds(500), latest: true, scheduler: MainScheduler.instance)
@@ -83,21 +90,38 @@ class KRTCListController: BaseViewController {
   
   func loadData() {
     isLoading = true
-    apiManager.getData(service: .GetMRTList(keyword)) { (model: [Station]?) in
-      if let model = model {
-        self.stations = model
-        self._stations = model
+    StationData.sharedInstance.loadDatas() { result in
+      switch result {
+      case .success(let stations):
+        self.stations = stations
+        self._stations = stations
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
           self.isLoading = false
           self.adapter.performUpdates(animated: true)
         }
-      }else {
+      case .failure(_):
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
           self.isLoading = false
           self.isEmptyData = true
         }
       }
     }
+//    isLoading = true
+//    apiManager.getData(service: .GetMRTList(keyword)) { (model: [Station]?) in
+//      if let model = model {
+//        self.stations = model
+//        self._stations = model
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//          self.isLoading = false
+//          self.adapter.performUpdates(animated: true)
+//        }
+//      }else {
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//          self.isLoading = false
+//          self.isEmptyData = true
+//        }
+//      }
+//    }
   }
   
   func queryData() {
@@ -128,13 +152,13 @@ class KRTCListController: BaseViewController {
   }
 }
 
-extension KRTCListController: EmptyViewDelegate {
+extension StationListController: EmptyViewDelegate {
   func retry() {
     loadData()
   }
 }
 
-extension KRTCListController: ListAdapterDataSource {
+extension StationListController: ListAdapterDataSource {
   func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
     return _stations
   }

@@ -21,6 +21,7 @@ class NewsCard: Card {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
     label.numberOfLines = 2
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   

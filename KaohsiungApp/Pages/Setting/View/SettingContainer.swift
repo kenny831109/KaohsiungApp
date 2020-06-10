@@ -19,6 +19,7 @@ class SettingContainer: UIView {
   let titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
+    label.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     return label
   }()
   

@@ -18,6 +18,7 @@ class CopyrightLicenseController: BaseViewController {
     view.isEditable = false
     view.contentInset.left = 5
     view.contentInset.right = 5
+    view.backgroundColor = .white
     return view
   }()
   

@@ -12,6 +12,12 @@
 		9402331A2473824F00DEAAC8 /* StationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940233192473824F00DEAAC8 /* StationCard.swift */; };
 		9402331C247387E000DEAAC8 /* LiveBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402331B247387E000DEAAC8 /* LiveBoard.swift */; };
 		9402331E2473A8A600DEAAC8 /* LiveBoardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */; };
+		940233252474D71700DEAAC8 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940233242474D71700DEAAC8 /* StationData.swift */; };
+		940233272474DDC200DEAAC8 /* MRTServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940233262474DDC200DEAAC8 /* MRTServiceController.swift */; };
+		940233292474DE2F00DEAAC8 /* MRTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940233282474DE2F00DEAAC8 /* MRTService.swift */; };
+		9402332B2474E00A00DEAAC8 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402332A2474E00A00DEAAC8 /* ServiceCell.swift */; };
+		9402332D2474E03600DEAAC8 /* ServiceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402332C2474E03600DEAAC8 /* ServiceCard.swift */; };
+		9402332F2474E11C00DEAAC8 /* UICollection+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402332E2474E11C00DEAAC8 /* UICollection+extension.swift */; };
 		9404FD88246BA566008A78AA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9404FD87246BA566008A78AA /* TabBarController.swift */; };
 		9404FD8A246BA5E9008A78AA /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9404FD89246BA5E9008A78AA /* CustomNavigationController.swift */; };
 		9414CA51246BB49B000B8AFD /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA50246BB49B000B8AFD /* UIColor+extension.swift */; };
@@ -28,7 +34,7 @@
 		94499D3624722E06003E6FD8 /* Moya_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3524722E06003E6FD8 /* Moya_license.txt */; };
 		94499D3824722E2C003E6FD8 /* Kingfisher_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D3724722E2C003E6FD8 /* Kingfisher_license.txt */; };
 		94499D3C24722F8F003E6FD8 /* CopyrightLicenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D3B24722F8F003E6FD8 /* CopyrightLicenseController.swift */; };
-		94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D4224724976003E6FD8 /* KRTCListController.swift */; };
+		94499D4324724976003E6FD8 /* StationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D4224724976003E6FD8 /* StationListController.swift */; };
 		94499D45247249E4003E6FD8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D44247249E4003E6FD8 /* Station.swift */; };
 		94499D4724725AA7003E6FD8 /* CryptoSwift_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */; };
 		944D7AAA2472771D00F187D0 /* StationSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D7AA92472771D00F187D0 /* StationSectionController.swift */; };
@@ -51,6 +57,7 @@
 		94B4139C246E770D000B3709 /* SettingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4139B246E770D000B3709 /* SettingCard.swift */; };
 		94B413A0246E7A8E000B3709 /* SettingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4139F246E7A8E000B3709 /* SettingContainer.swift */; };
 		94B413A3246E87B9000B3709 /* VersionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B413A2246E87B9000B3709 /* VersionCard.swift */; };
+		94EFD36A249074E300B2B97F /* SearchBar+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EFD369249074E300B2B97F /* SearchBar+extension.swift */; };
 		94F4E7EB246BFC3F00F834BA /* BulletinSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4E7EA246BFC3F00F834BA /* BulletinSectionController.swift */; };
 		94F4E7ED246D23AD00F834BA /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4E7EC246D23AD00F834BA /* NewsCard.swift */; };
 		94F4E7EF246D40F000F834BA /* BulletinDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4E7EE246D40F000F834BA /* BulletinDetailController.swift */; };
@@ -66,6 +73,12 @@
 		940233192473824F00DEAAC8 /* StationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCard.swift; sourceTree = "<group>"; };
 		9402331B247387E000DEAAC8 /* LiveBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBoard.swift; sourceTree = "<group>"; };
 		9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBoardCard.swift; sourceTree = "<group>"; };
+		940233242474D71700DEAAC8 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		940233262474DDC200DEAAC8 /* MRTServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTServiceController.swift; sourceTree = "<group>"; };
+		940233282474DE2F00DEAAC8 /* MRTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRTService.swift; sourceTree = "<group>"; };
+		9402332A2474E00A00DEAAC8 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		9402332C2474E03600DEAAC8 /* ServiceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCard.swift; sourceTree = "<group>"; };
+		9402332E2474E11C00DEAAC8 /* UICollection+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+extension.swift"; sourceTree = "<group>"; };
 		9404FD87246BA566008A78AA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9404FD89246BA5E9008A78AA /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		9414CA50246BB49B000B8AFD /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
@@ -82,7 +95,7 @@
 		94499D3524722E06003E6FD8 /* Moya_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Moya_license.txt; sourceTree = "<group>"; };
 		94499D3724722E2C003E6FD8 /* Kingfisher_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kingfisher_license.txt; sourceTree = "<group>"; };
 		94499D3B24722F8F003E6FD8 /* CopyrightLicenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightLicenseController.swift; sourceTree = "<group>"; };
-		94499D4224724976003E6FD8 /* KRTCListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRTCListController.swift; sourceTree = "<group>"; };
+		94499D4224724976003E6FD8 /* StationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListController.swift; sourceTree = "<group>"; };
 		94499D44247249E4003E6FD8 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		94499D4624725AA7003E6FD8 /* CryptoSwift_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CryptoSwift_license.txt; sourceTree = "<group>"; };
 		944D7AA92472771D00F187D0 /* StationSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSectionController.swift; sourceTree = "<group>"; };
@@ -90,7 +103,7 @@
 		944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardLayoutGuilde.swift; sourceTree = "<group>"; };
 		944D7AB0247290D200F187D0 /* StationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationBadge.swift; sourceTree = "<group>"; };
 		944D7AB22472941500F187D0 /* StationLiveBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLiveBoardController.swift; sourceTree = "<group>"; };
-		945779C324640A8A001922EC /* 高雄資訊通.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高雄資訊通.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		945779C324640A8A001922EC /* 高雄資訊APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高雄資訊APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945779C624640A8A001922EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945779C824640A8A001922EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		945779CA24640A8A001922EC /* BulletinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinController.swift; sourceTree = "<group>"; };
@@ -107,6 +120,7 @@
 		94B4139B246E770D000B3709 /* SettingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCard.swift; sourceTree = "<group>"; };
 		94B4139F246E7A8E000B3709 /* SettingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingContainer.swift; sourceTree = "<group>"; };
 		94B413A2246E87B9000B3709 /* VersionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCard.swift; sourceTree = "<group>"; };
+		94EFD369249074E300B2B97F /* SearchBar+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBar+extension.swift"; sourceTree = "<group>"; };
 		94F4E7EA246BFC3F00F834BA /* BulletinSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinSectionController.swift; sourceTree = "<group>"; };
 		94F4E7EC246D23AD00F834BA /* NewsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
 		94F4E7EE246D40F000F834BA /* BulletinDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinDetailController.swift; sourceTree = "<group>"; };
@@ -139,6 +153,14 @@
 				BF7DD43078278C687112A0ED /* Pods_KaohsiungApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		940233232474D70200DEAAC8 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				940233242474D71700DEAAC8 /* StationData.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 		9404FD8B246BB1D6008A78AA /* Bulletin */ = {
@@ -233,6 +255,8 @@
 				9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */,
 				94F4E7F0246D46E300F834BA /* String+extension.swift */,
 				944D7AAE2472873100F187D0 /* KeyBoardLayoutGuilde.swift */,
+				9402332E2474E11C00DEAAC8 /* UICollection+extension.swift */,
+				94EFD369249074E300B2B97F /* SearchBar+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,20 +284,22 @@
 			path = License;
 			sourceTree = "<group>";
 		};
-		94499D3D24724927003E6FD8 /* KRTC */ = {
+		94499D3D24724927003E6FD8 /* MRT */ = {
 			isa = PBXGroup;
 			children = (
+				940233232474D70200DEAAC8 /* DataStore */,
 				94499D4124724950003E6FD8 /* View */,
 				94499D402472494B003E6FD8 /* Model */,
 				94499D3E2472493D003E6FD8 /* Controller */,
 			);
-			path = KRTC;
+			path = MRT;
 			sourceTree = "<group>";
 		};
 		94499D3E2472493D003E6FD8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				94499D4224724976003E6FD8 /* KRTCListController.swift */,
+				940233262474DDC200DEAAC8 /* MRTServiceController.swift */,
+				94499D4224724976003E6FD8 /* StationListController.swift */,
 				944D7AA92472771D00F187D0 /* StationSectionController.swift */,
 				944D7AB22472941500F187D0 /* StationLiveBoardController.swift */,
 			);
@@ -285,6 +311,7 @@
 			children = (
 				94499D44247249E4003E6FD8 /* Station.swift */,
 				9402331B247387E000DEAAC8 /* LiveBoard.swift */,
+				940233282474DE2F00DEAAC8 /* MRTService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +322,7 @@
 				944D7AB0247290D200F187D0 /* StationBadge.swift */,
 				940233192473824F00DEAAC8 /* StationCard.swift */,
 				9402331D2473A8A600DEAAC8 /* LiveBoardCard.swift */,
+				9402332C2474E03600DEAAC8 /* ServiceCard.swift */,
 				944D7AAB247277A600F187D0 /* Cell */,
 			);
 			path = View;
@@ -304,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				944D7AAC247277B800F187D0 /* StationCell.swift */,
+				9402332A2474E00A00DEAAC8 /* ServiceCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -321,7 +350,7 @@
 		945779C424640A8A001922EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				945779C324640A8A001922EC /* 高雄資訊通.app */,
+				945779C324640A8A001922EC /* 高雄資訊APP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,7 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				9404FD8B246BB1D6008A78AA /* Bulletin */,
-				94499D3D24724927003E6FD8 /* KRTC */,
+				94499D3D24724927003E6FD8 /* MRT */,
 				9404FD94246BB2D7008A78AA /* Setting */,
 			);
 			path = Pages;
@@ -454,7 +483,7 @@
 			);
 			name = KaohsiungApp;
 			productName = KaohsiungApp;
-			productReference = 945779C324640A8A001922EC /* 高雄資訊通.app */;
+			productReference = 945779C324640A8A001922EC /* 高雄資訊APP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -562,8 +591,10 @@
 				944D7AAF2472873100F187D0 /* KeyBoardLayoutGuilde.swift in Sources */,
 				94FF9906246A49790006393F /* BulletinModel.swift in Sources */,
 				944D7AB1247290D200F187D0 /* StationBadge.swift in Sources */,
+				94EFD36A249074E300B2B97F /* SearchBar+extension.swift in Sources */,
 				9404FD88246BA566008A78AA /* TabBarController.swift in Sources */,
 				9402331C247387E000DEAAC8 /* LiveBoard.swift in Sources */,
+				9402332F2474E11C00DEAAC8 /* UICollection+extension.swift in Sources */,
 				9414CA53246BB4DE000B8AFD /* Color.swift in Sources */,
 				9414CA5A246BEDEE000B8AFD /* UITableView+extension.swift in Sources */,
 				94B413A3246E87B9000B3709 /* VersionCard.swift in Sources */,
@@ -576,8 +607,10 @@
 				94B41383246E43B3000B3709 /* BaseViewController.swift in Sources */,
 				94499D45247249E4003E6FD8 /* Station.swift in Sources */,
 				94F4E7F1246D46E300F834BA /* String+extension.swift in Sources */,
+				9402332B2474E00A00DEAAC8 /* ServiceCell.swift in Sources */,
 				94B41389246E52E8000B3709 /* SettingController.swift in Sources */,
 				94B4137E246E2EA0000B3709 /* LinkCell.swift in Sources */,
+				940233292474DE2F00DEAAC8 /* MRTService.swift in Sources */,
 				944D7AAD247277B800F187D0 /* StationCell.swift in Sources */,
 				9414CA58246BE846000B8AFD /* APIService.swift in Sources */,
 				9404FD8A246BA5E9008A78AA /* CustomNavigationController.swift in Sources */,
@@ -588,11 +621,14 @@
 				94B4139C246E770D000B3709 /* SettingCard.swift in Sources */,
 				94F4E7EB246BFC3F00F834BA /* BulletinSectionController.swift in Sources */,
 				94F4E7ED246D23AD00F834BA /* NewsCard.swift in Sources */,
+				940233252474D71700DEAAC8 /* StationData.swift in Sources */,
 				9414CA56246BB7C0000B8AFD /* LaunchScreenController.swift in Sources */,
 				945779C724640A8A001922EC /* AppDelegate.swift in Sources */,
 				94B413A0246E7A8E000B3709 /* SettingContainer.swift in Sources */,
-				94499D4324724976003E6FD8 /* KRTCListController.swift in Sources */,
+				94499D4324724976003E6FD8 /* StationListController.swift in Sources */,
 				944D7AAA2472771D00F187D0 /* StationSectionController.swift in Sources */,
+				940233272474DDC200DEAAC8 /* MRTServiceController.swift in Sources */,
+				9402332D2474E03600DEAAC8 /* ServiceCard.swift in Sources */,
 				94499D2924722668003E6FD8 /* Copyright.swift in Sources */,
 				94B4138E246E6380000B3709 /* Card.swift in Sources */,
 				9414CA51246BB49B000B8AFD /* UIColor+extension.swift in Sources */,
@@ -739,7 +775,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -748,8 +784,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
-				PRODUCT_NAME = "高雄資訊通";
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.MRTProject.com;
+				PRODUCT_NAME = "高雄資訊APP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -761,7 +797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -770,8 +806,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mac.yitang.KaohsiungApp;
-				PRODUCT_NAME = "高雄資訊通";
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.MRTProject.com;
+				PRODUCT_NAME = "高雄資訊APP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -23,6 +23,7 @@ class CopyrightListController: BaseViewController {
     view.tableFooterView = UIView()
     view.delegate = self
     view.dataSource = self
+    view.backgroundColor = .white
     return view
   }()
   
@@ -61,7 +62,9 @@ extension CopyrightListController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(with: UITableViewCell.self, for: indexPath)
     cell.textLabel?.text = copyrights[indexPath.row].frameworkName
+    cell.textLabel?.textColor = UIColor(r: 74, g: 74, b: 74, a: 1)
     cell.accessoryType = .disclosureIndicator
+    cell.backgroundColor = .white
     return cell
   }
 }

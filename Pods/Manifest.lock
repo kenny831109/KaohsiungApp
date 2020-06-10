@@ -19,6 +19,7 @@ PODS:
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.1)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - Moya/RxSwift (~> 14.0)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
+  - VegaScrollFlowLayout
 
 SPEC REPOS:
   trunk:
@@ -42,6 +44,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
@@ -54,7 +57,8 @@ SPEC CHECKSUMS:
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: b4999d265118af64746d8e02c68b75092efe2b95
+PODFILE CHECKSUM: a5838a5922f6f2c87c164d757bcdee306af3ec66
 
 COCOAPODS: 1.8.4

@@ -19,6 +19,7 @@ class BulletinDetailController: UIViewController {
     view.delegate = self
     view.dataSource = self
     view.separatorStyle = .none
+    view.backgroundColor = .white
     return view
   }()
   

@@ -12,6 +12,7 @@ target 'KaohsiungApp' do
   pod 'IGListKit'
   pod 'lottie-ios'
   pod 'CryptoSwift'
+  pod 'VegaScrollFlowLayout'
   # Pods for KaohsiungApp
 
 end
