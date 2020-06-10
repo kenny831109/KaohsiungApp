@@ -6,7 +6,7 @@
 
 ## Apple Store 
 
-待新增
+[![Available on the App Store](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8)
 
 ## Google Play Store
 
