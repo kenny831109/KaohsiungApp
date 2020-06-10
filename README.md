@@ -6,7 +6,7 @@
 
 ## Apple Store 
 
-[![Available on the App Store](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8)
+[![Available on the App Store](http://cl.ly/WouG/Download_on_the_App_Store_Badge_US-UK_135x40.svg)](https://apps.apple.com/us/app/%E9%AB%98%E9%9B%84%E8%B3%87%E8%A8%8A-app/id1517550061?l=zh&ls=1)
 
 ## Google Play Store
 
