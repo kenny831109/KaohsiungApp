@@ -25,6 +25,10 @@
 		9414CA56246BB7C0000B8AFD /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA55246BB7C0000B8AFD /* LaunchScreenController.swift */; };
 		9414CA58246BE846000B8AFD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA57246BE846000B8AFD /* APIService.swift */; };
 		9414CA5A246BEDEE000B8AFD /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */; };
+		942FDA272490DBD7004071F0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942FDA262490DBD7004071F0 /* NotificationCenter.framework */; };
+		942FDA2A2490DBD8004071F0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FDA292490DBD8004071F0 /* TodayViewController.swift */; };
+		942FDA2D2490DBD8004071F0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FDA2B2490DBD8004071F0 /* MainInterface.storyboard */; };
+		942FDA312490DBD8004071F0 /* 捷運到站時間.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 942FDA252490DBD7004071F0 /* 捷運到站時間.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94499D2724722368003E6FD8 /* CopyrightListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D2624722368003E6FD8 /* CopyrightListController.swift */; };
 		94499D2924722668003E6FD8 /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94499D2824722668003E6FD8 /* Copyright.swift */; };
 		94499D2E24722CA0003E6FD8 /* lottie_license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94499D2D24722CA0003E6FD8 /* lottie_license.txt */; };
@@ -68,6 +72,30 @@
 		94FF9908246A81310006393F /* BulletinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF9907246A81310006393F /* BulletinCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		942FDA2F2490DBD8004071F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 945779BB24640A8A001922EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942FDA242490DBD7004071F0;
+			remoteInfo = MRTEstimatetime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		942FDA322490DBD8004071F0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				942FDA312490DBD8004071F0 /* 捷運到站時間.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		94023317247381CC00DEAAC8 /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
 		940233192473824F00DEAAC8 /* StationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCard.swift; sourceTree = "<group>"; };
@@ -86,6 +114,11 @@
 		9414CA55246BB7C0000B8AFD /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		9414CA57246BE846000B8AFD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9414CA59246BEDEE000B8AFD /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
+		942FDA252490DBD7004071F0 /* 捷運到站時間.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "捷運到站時間.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		942FDA262490DBD7004071F0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		942FDA292490DBD8004071F0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		942FDA2C2490DBD8004071F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		942FDA2E2490DBD8004071F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94499D2624722368003E6FD8 /* CopyrightListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightListController.swift; sourceTree = "<group>"; };
 		94499D2824722668003E6FD8 /* Copyright.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
 		94499D2D24722CA0003E6FD8 /* lottie_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lottie_license.txt; sourceTree = "<group>"; };
@@ -136,6 +169,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		942FDA222490DBD7004071F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942FDA272490DBD7004071F0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		945779C024640A8A001922EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				BF7DD43078278C687112A0ED /* Pods_KaohsiungApp.framework */,
+				942FDA262490DBD7004071F0 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +312,16 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		942FDA282490DBD7004071F0 /* MRTEstimatetime */ = {
+			isa = PBXGroup;
+			children = (
+				942FDA292490DBD8004071F0 /* TodayViewController.swift */,
+				942FDA2B2490DBD8004071F0 /* MainInterface.storyboard */,
+				942FDA2E2490DBD8004071F0 /* Info.plist */,
+			);
+			path = MRTEstimatetime;
+			sourceTree = "<group>";
+		};
 		94499D2C24722C6C003E6FD8 /* License */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				945779C524640A8A001922EC /* KaohsiungApp */,
+				942FDA282490DBD7004071F0 /* MRTEstimatetime */,
 				945779C424640A8A001922EC /* Products */,
 				99E7E1F1A01002F8648969DB /* Pods */,
 				340F888957C318AB5567C485 /* Frameworks */,
@@ -351,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				945779C324640A8A001922EC /* 高雄資訊APP.app */,
+				942FDA252490DBD7004071F0 /* 捷運到站時間.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -467,6 +521,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		942FDA242490DBD7004071F0 /* MRTEstimatetime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942FDA352490DBD8004071F0 /* Build configuration list for PBXNativeTarget "MRTEstimatetime" */;
+			buildPhases = (
+				942FDA212490DBD7004071F0 /* Sources */,
+				942FDA222490DBD7004071F0 /* Frameworks */,
+				942FDA232490DBD7004071F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRTEstimatetime;
+			productName = MRTEstimatetime;
+			productReference = 942FDA252490DBD7004071F0 /* 捷運到站時間.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		945779C224640A8A001922EC /* KaohsiungApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 945779D724640A8E001922EC /* Build configuration list for PBXNativeTarget "KaohsiungApp" */;
@@ -476,10 +547,12 @@
 				945779C024640A8A001922EC /* Frameworks */,
 				945779C124640A8A001922EC /* Resources */,
 				E83BB72DA102215BE3E0E563 /* [CP] Embed Pods Frameworks */,
+				942FDA322490DBD8004071F0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				942FDA302490DBD8004071F0 /* PBXTargetDependency */,
 			);
 			name = KaohsiungApp;
 			productName = KaohsiungApp;
@@ -493,9 +566,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "逸唐陳";
 				TargetAttributes = {
+					942FDA242490DBD7004071F0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					945779C224640A8A001922EC = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -516,11 +592,20 @@
 			projectRoot = "";
 			targets = (
 				945779C224640A8A001922EC /* KaohsiungApp */,
+				942FDA242490DBD7004071F0 /* MRTEstimatetime */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		942FDA232490DBD7004071F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942FDA2D2490DBD8004071F0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		945779C124640A8A001922EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -584,6 +669,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		942FDA212490DBD7004071F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942FDA2A2490DBD8004071F0 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		945779BF24640A8A001922EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -640,7 +733,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		942FDA302490DBD8004071F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 942FDA242490DBD7004071F0 /* MRTEstimatetime */;
+			targetProxy = 942FDA2F2490DBD8004071F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		942FDA2B2490DBD8004071F0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				942FDA2C2490DBD8004071F0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		945779D124640A8E001922EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -653,6 +762,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		942FDA332490DBD8004071F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8K3DDFT5E;
+				INFOPLIST_FILE = MRTEstimatetime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.MRTProject.com.MRTEstimatetime;
+				PRODUCT_NAME = "捷運到站時間";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		942FDA342490DBD8004071F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8K3DDFT5E;
+				INFOPLIST_FILE = MRTEstimatetime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kenny.MRTProject.com.MRTEstimatetime;
+				PRODUCT_NAME = "捷運到站時間";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		945779D524640A8E001922EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -680,6 +829,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -704,7 +854,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -741,6 +891,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -759,7 +910,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -773,12 +924,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9F24730A199853728499EFC /* Pods-KaohsiungApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,12 +947,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F484AFA656E312B72471DBF7 /* Pods-KaohsiungApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Q8K3DDFT5E;
 				INFOPLIST_FILE = KaohsiungApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,6 +969,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		942FDA352490DBD8004071F0 /* Build configuration list for PBXNativeTarget "MRTEstimatetime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942FDA332490DBD8004071F0 /* Debug */,
+				942FDA342490DBD8004071F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		945779BE24640A8A001922EC /* Build configuration list for PBXProject "KaohsiungApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

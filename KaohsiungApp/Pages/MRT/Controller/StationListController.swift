@@ -69,12 +69,24 @@ class StationListController: BaseViewController {
     searchController = UISearchController(searchResultsController: nil)
     searchController.dimsBackgroundDuringPresentation = false
     searchController.searchBar.tintColor = UIColor(r: 74, g: 74, b: 74, a: 1)
-    searchController.searchBar.searchTextField.backgroundColor = .white
-    searchController.searchBar.searchTextField.tintColor = .systemBlue
+    if #available(iOS 13.0, *) {
+      searchController.searchBar.searchTextField.backgroundColor = .white
+    } else {
+      // Fallback on earlier versions
+    }
+    if #available(iOS 13.0, *) {
+      searchController.searchBar.searchTextField.tintColor = .systemBlue
+    } else {
+      // Fallback on earlier versions
+    }
     searchController.searchBar.setTextColor(color: UIColor(r: 74, g: 74, b: 74, a: 1))
-    if let icon = searchController.searchBar.searchTextField.leftView as? UIImageView {
-      icon.image = icon.image?.withRenderingMode(.alwaysTemplate)
-      icon.tintColor = UIColor(r: 74, g: 74, b: 74, a: 1)
+    if #available(iOS 13.0, *) {
+      if let icon = searchController.searchBar.searchTextField.leftView as? UIImageView {
+        icon.image = icon.image?.withRenderingMode(.alwaysTemplate)
+        icon.tintColor = UIColor(r: 74, g: 74, b: 74, a: 1)
+      }
+    } else {
+      // Fallback on earlier versions
     }
 //    searchController.searchBar.searchTextField
     searchController.searchBar.rx.text

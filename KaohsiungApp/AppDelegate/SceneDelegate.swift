@@ -27,6 +27,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
       self.window?.rootViewController = tabbarVC
     }
+//    let userDefaults = UserDefaults()
+//    var count = userDefaults.integer(forKey: "launchCount")
+//    count += 1
+//    userDefaults.set(count, forKey: "launchCount")
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
