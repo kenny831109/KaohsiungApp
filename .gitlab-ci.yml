@@ -1,0 +1,19 @@
+stages:
+  - develop
+
+variables:
+  LANG: "en_US.UTF-8"
+  LC_ALL: "en_US.UTF-8"
+  GIT_SUBMODULE_STRATEGY: normal
+ 
+# before_script:
+#   - sudo gem install bundler -n /usr/local/bin
+ 
+develop:
+  tags:
+    - ios
+  stage: develop
+  script:
+    - fastlane beta
+  environment:
+    name: develop
