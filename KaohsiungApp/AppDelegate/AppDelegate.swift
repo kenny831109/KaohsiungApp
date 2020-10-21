@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     if #available(iOS 13, *) {
       //
     }else {
-      print("Test")
       let launchScreen = LaunchScreenController()
       let tabbarVC = TabBarController()
       window?.rootViewController = launchScreen
