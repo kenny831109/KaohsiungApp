@@ -7,8 +7,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: normal
  
 before_script:
-  - sudo gem install bundler && bundle update
-  - sudo gem install cocoapods
+  - sudo gem install bundler -n /usr/local/bin
  
 develop:
   tags:
