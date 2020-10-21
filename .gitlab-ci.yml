@@ -1,20 +1,18 @@
 stages:
-  - develop
+  - build
+  - test
+  - deploy
 
 variables:
-  LANG: "en_US.UTF-8"
   LC_ALL: "en_US.UTF-8"
-  GIT_SUBMODULE_STRATEGY: normal
- 
-before_script:
-  - gem install bundler && bundle update
-  - gem install cocoapods
- 
-develop:
-  tags:
-    - ios
-  stage: develop
+  LANG: "en_US.UTF-8"
+  GIT_STRATEGY: clone
+
+build:
+  stage: build
   script:
+    - bundle install
     - bundle exec fastlane beta
-  environment:
-    name: develop
+  artifacts:
+    paths:
+      - ./*.ipa
