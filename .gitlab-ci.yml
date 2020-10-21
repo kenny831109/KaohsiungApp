@@ -6,18 +6,15 @@ variables:
   LC_ALL: "en_US.UTF-8"
   GIT_SUBMODULE_STRATEGY: normal
  
-# before_script:
-#   - sudo gem install bundler && bundle update
-#   - sudo gem install cocoapods
+before_script:
+  - sudo gem install bundler && bundle update
+  - sudo gem install cocoapods
  
 develop:
   tags:
     - ios
   stage: develop
   script:
-    - sudo gem install bundler
-    - bundle update
-    - sudo gem install cocoapods
     - bundle exec fastlane beta
   environment:
     name: develop
